@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assingment__8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grade-box">
+    <form id="gradeForm" onsubmit="makeItSubmit(event)">
+      <h1 class="form-title">Student Result Calculator</h1>
+      
+      <label for="studentName">Student Name:</label>
+      <input id="studentName" type="text" placeholder="Enter your name" required>
+
+      <h3 class="subject-heading">Enter your Subject Marks</h3>
+      <label for="Num1">Maths:</label>
+      <input id="Num1" type="number" min="0" max="100" required>
+
+      <label for="Num2">Computer:</label>
+      <input id="Num2" type="number" min="0" max="100" required>
+
+      <label for="Num3">English:</label>
+      <input id="Num3" type="number" min="0" max="100" required>
+
+      <label for="Num4">Physics:</label>
+      <input id="Num4" type="number" min="0" max="100" required>
+
+      <label for="Num5">Urdu:</label>
+      <input id="Num5" type="number" min="0" max="100" required>
+
+      <button type="submit" class="submit-btn">Check Your Score</button>
+    </form>
+    
+    <div class="result-section">
+      <div id="gifBox" class="gif-message">
+        <h2> Submitted Successfully — Check Console for Results!</h2>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
